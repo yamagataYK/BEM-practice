@@ -2,6 +2,24 @@ html {
     font-size: 62.5%;
 }
 
+/* PCとSPの表示非表示の切り替え*/
+.sp_only {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .sp_only {
+        display: block;
+    }
+}
+
+/*PCのみ表示*/
+@media screen and (max-width: 768px) {
+    .pc_only {
+        display: none;
+    }
+}
+
 .header {
     height: 90px;
 
